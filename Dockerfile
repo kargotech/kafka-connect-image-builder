@@ -4,7 +4,7 @@ RUN confluent-hub install --no-prompt wepay/kafka-connect-bigquery:2.3.0 \
   && confluent-hub install --no-prompt confluentinc/kafka-connect-avro-converter:7.1.1
 
 
-FROM quay.io/strimzi/kafka:0.28.0-kafka-3.1.0
+FROM quay.io/strimzi/kafka:0.29.0-kafka-3.2.0
 
 USER root:root
 
