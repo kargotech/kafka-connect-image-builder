@@ -17,6 +17,7 @@ RUN mkdir -p /opt/kafka/plugins/bigquery opt/kafka/plugins/avro
 COPY --from=cp /usr/share/confluent-hub-components/wepay-kafka-connect-bigquery/lib /opt/kafka/plugins/bigquery/
 COPY --from=cp /usr/share/confluent-hub-components/confluentinc-kafka-connect-avro-converter/lib /opt/kafka/plugins/avro/
 COPY --from=cp /usr/share/confluent-hub-components/mongodb-kafka-connect-mongodb/lib /opt/kafka/plugins/mongodb/
-COPY --from=cp /usr/share/confluent-hub-components/kafka-connect-jdbc/lib /opt/kafka/plugins/confluentinc/
+COPY --from=cp /usr/share/confluent-hub-components/confluentinc-connect-transforms/lib /opt/kafka/plugins/confluentinc/
+COPY --from=cp /usr/share/confluent-hub-components/confluentinc-kafka-connect-jdbc/lib /opt/kafka/plugins/confluentinc/
 
 USER 1001
