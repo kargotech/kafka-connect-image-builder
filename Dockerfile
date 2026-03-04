@@ -6,7 +6,7 @@ RUN confluent-hub install --no-prompt wepay/kafka-connect-bigquery:2.3.0 \
   && confluent-hub install --no-prompt confluentinc/connect-transforms:1.4.3 \
   && confluent-hub install --no-prompt confluentinc/kafka-connect-jdbc:10.5.2
 
-FROM quay.io/strimzi/kafka:0.29.0-kafka-3.2.0
+FROM quay.io/strimzi/kafka:0.50.0-kafka-4.1.1
 
 USER root:root
 
